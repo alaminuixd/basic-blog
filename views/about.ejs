@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/nav.ejs") %>
+    <div class="about content">
+        <% if(about.length > 0){ %>
+            <% about.forEach((item) => { %>
+                <h2><%= item.title %></h2>
+                <%- item.body %>
+            <% }) %>
+        <% } %>        
+    </div>
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>
