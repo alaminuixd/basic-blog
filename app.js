@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const Blog = require("./models/blog.model");
@@ -12,8 +13,7 @@ app.use(express.static("public"));
 // Middleware for encoding URL data
 app.use(express.urlencoded({ extended: true }));
 // connect to the "mongoose DB"
-const dbURI =
-  "mongodb+srv://alaminuixd:khan193011@cluster-0.ddhxj.mongodb.net/khantuts?retryWrites=true&w=majority&appName=Cluster-0";
+const dbURI = process.env.MONGO_URI;
 // connect is an asynchronous function that return a promise
 mongoose
   .connect(dbURI)
