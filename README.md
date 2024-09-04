@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Basic Blog App Using Node.js, Express, MongoDB, and EJS</h1>
+<h1 style="text-align: center;">Basic Blog CARD App</h1>
 <p style="font-size: 16px;">This Basic Blog app is built using Node.js, Express, Mongoose, and EJS. It provides a simple platform for creating, reading, updating, and deleting blog posts. Please note that this version does not include login authentication, so all users can access and modify content without restrictions.</p>
 
 ## Install Node Modules
