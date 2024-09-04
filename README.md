@@ -20,13 +20,14 @@ Install Nodemon either locally or globally to automatically restart the server o
 ## Mongoose Configuration
 
 1. Create a new `.env` file in your project root directory.
-2. Replace `your.connection.string` with your MongoDB connection string in the following line:
+2. Copy the following line into the `.env` file.
 
    ```bash
    MONGO_URI=your.connection.string
    ```
 
-3. Save this code in your `.env` file.
+3. Replace `your.connection.string` with your MongoDB connection string in the following line:
+4. Save the `.env` file.
 
 ## Connect to the Database and Run the Server
 
